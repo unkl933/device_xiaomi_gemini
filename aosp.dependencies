@@ -1,0 +1,17 @@
+[
+  {
+    "repository" : "AospExtended-Devices/device_xiaomi_gemini",
+    "target_path": "device/xiaomi/gemini"
+    "branch"     : "aosp-ten-4.4"
+  },
+  {
+    "repository" : "AospExtended-Devices/vendor_xiaomi_gemini",
+    "target_path": "vendor/xiaomi",
+    "branch"     : "aosp-ten-4.4"
+  },
+  {
+    "repository" : "xNombre/msm-4.4",
+    "target_path": "kernel/xiaomi/gemini",
+    "branch"     : "q-eas-infinity"
+  }
+]
