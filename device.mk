@@ -42,10 +42,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SnapdragonCamera
 
-# ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
-
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi
@@ -53,6 +49,10 @@ PRODUCT_PACKAGES += \
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.target.rc
+
+# Device Features
+PRODUCT_PACKAGES += \
+    DeviceFeatures
 
 # Fingerprint
 PRODUCT_PACKAGES += \
