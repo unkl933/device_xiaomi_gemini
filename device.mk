@@ -40,7 +40,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera
 
 # ConfigPanel
 PRODUCT_PACKAGES += \
