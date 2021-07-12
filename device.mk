@@ -50,7 +50,7 @@ PRODUCT_PACKAGES += \
     init.target.rc
 
 # Device Features
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     DeviceFeatures
 
 # Fingerprint
