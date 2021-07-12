@@ -44,11 +44,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "Xiaomi/gemini/gemini:8.0.0/OPR1.170623.032/V9.6.1.0.OAAMIFD:user/release-keys"
 
 TARGET_VENDOR := Xiaomi
-
-# Build with GApps if GAPPS_BUILD is true
-ifeq ($(GAPPS_BUILD),true)
-    WITH_GAPPS := true
-    TARGET_GAPPS_ARCH := arm64
-    IS_PHONE := true
-    TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
-endif
