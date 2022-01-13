@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_gemini.mk
+    $(LOCAL_DIR)/nad_gemini.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_gemini-user \
-    aosp_gemini-userdebug \
-    aosp_gemini-eng
+    nad_gemini-user \
+    nad_gemini-userdebug \
+    nad_gemini-eng
