@@ -26,7 +26,7 @@ $(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official Nusantara
-EXTENDED_BUILD_TYPE := UNOFFICIAL
+NAD_BUILD_TYPE := UNOFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nad_gemini
