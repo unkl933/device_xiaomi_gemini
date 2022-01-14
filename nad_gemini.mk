@@ -14,18 +14,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 # Inherit from gemini device
-$(call inherit-product, device/xiaomi/gemini/device.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/nad/common.mk)
+$(call inherit-product, device/xiaomi/gemini/device.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Official AospExtended
-EXTENDED_BUILD_TYPE := OFFICIAL
+# Official Nusantara
+EXTENDED_BUILD_TYPE := UNOFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nad_gemini
@@ -45,10 +46,3 @@ BUILD_FINGERPRINT := "Xiaomi/gemini/gemini:8.0.0/OPR1.170623.032/V9.6.1.0.OAAMIF
 
 TARGET_VENDOR := Xiaomi
 
-# Build with GApps if GAPPS_BUILD is true
-ifeq ($(GAPPS_BUILD),true)
-    WITH_GAPPS := true
-    TARGET_GAPPS_ARCH := arm64
-    IS_PHONE := true
-    TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
-endif
