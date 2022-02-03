@@ -19,7 +19,15 @@
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
 # Inherit some common AEX stuff.
-$(call inherit-product, vendor/nusantara/config/common.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
+# GApps
+TARGET_USES_BLUR := true
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
+
+# Pixel Charging
+USE_PIXEL_CHARGING := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -45,10 +53,3 @@ BUILD_FINGERPRINT := "Xiaomi/gemini/gemini:8.0.0/OPR1.170623.032/V9.6.1.0.OAAMIF
 
 TARGET_VENDOR := Xiaomi
 
-# Build with GApps if GAPPS_BUILD is true
-ifeq ($(GAPPS_BUILD),true)
-    WITH_GAPPS := true
-    TARGET_GAPPS_ARCH := arm64
-    IS_PHONE := true
-    TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
-endif
