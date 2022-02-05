@@ -26,9 +26,6 @@ TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
 USE_GAPPS := true
 
-# Pixel Charging
-USE_PIXEL_CHARGING := true
-
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
