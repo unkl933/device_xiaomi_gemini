@@ -29,5 +29,13 @@ TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 # Kernel
 TARGET_KERNEL_CONFIG := barokah_defconfig
 
+# SELinux
+# BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-s/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+
+# Treble
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/gemini/BoardConfigVendor.mk

@@ -15,16 +15,20 @@
 # limitations under the License.
 #
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
-# Inherit some common AEX stuff.
+# Inherit some common NAd stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 # GApps
-TARGET_USES_BLUR := true
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
+#TARGET_USES_BLUR := true
+#TARGET_GAPPS_ARCH := arm64
+#USE_GAPPS := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -42,11 +46,12 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="gemini" \
-    PRIVATE_BUILD_DESC="gemini-user 8.0.0 OPR1.170623.032 V9.6.1.0.OAAMIFD release-keys"
+    TARGET_DEVICE=gemini \
+    PRODUCT_NAME=gemini \
+    PRIVATE_BUILD_DESC="google-user 11 RQ3A.211001.001 7641976 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/gemini/gemini:8.0.0/OPR1.170623.032/V9.6.1.0.OAAMIFD:user/release-keys"
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys
 
 TARGET_VENDOR := Xiaomi
 

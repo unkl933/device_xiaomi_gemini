@@ -19,3 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.qfp=false \
     ro.hardware.fingerprint=fpc \
     sys.fpc.tu.disabled=0
+
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=560
