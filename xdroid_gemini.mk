@@ -18,22 +18,22 @@
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common xdroid stuff.
+$(call inherit-product, vendor/xdroid/config/common_full_phone.mk)
 
 # GApps
-TARGET_USES_BLUR := true
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
+# TARGET_USES_BLUR := true
+# TARGET_GAPPS_ARCH := arm64
+# USE_GAPPS := true
+
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := Luffy_X_BarokahProject
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Official AospExtended
-NAD_BUILD_TYPE := UNOFFICIAL
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_gemini
+PRODUCT_NAME := xdroid_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 5

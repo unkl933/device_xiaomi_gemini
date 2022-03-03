@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2015-2018 AOSiP
+     Copyright 2021-2022 xyzuan, xyzprjkt
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -13,6 +13,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="maintainer_name">BarokahProject</string>
+    <!-- xd. About Phone -->
+    <string name="xd_device_name_summary">MI 5</string>
+    <string name="xd_chipset_type_summary">Qualcomm Snapdragon™ 820</string>
+    <string name="xd_gpu_summary">Adreno 530</string>
+    <string name="xd_camera_mp_summary">16MP Camera</string>
+    <string name="xd_screen_type_summary">FHD+ 5.15 Screen</string>
 
 </resources>

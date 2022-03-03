@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_gemini.mk
+    $(LOCAL_DIR)/xdroid_gemini.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_gemini-user \
-    nad_gemini-userdebug \
-    nad_gemini-eng
+    xdroid_gemini-user \
+    xdroid_gemini-userdebug \
+    xdroid_gemini-eng
