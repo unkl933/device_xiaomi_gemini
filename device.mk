@@ -38,20 +38,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/mixer_paths_tasha.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha.xml
 
-# Barokah Project
-PRODUCT_PACKAGES += \
-    barokah
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/com.barokah.kernel.unkl.xml:system/etc/permissions/com.barokah.kernel.unkl.xml
-
 # Camera
 PRODUCT_PACKAGES += \
-    GCam
-    #Snap
-    
+    #GCam \
+    Snap
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.google.android.GoogleCamera.xml:system/etc/permissions/com.google.android.GoogleCamera.xml
+
+# Device Features
+PRODUCT_PACKAGES += \
+    DeviceFeatures
 
 # Consumer IR
 PRODUCT_PACKAGES += \
@@ -61,10 +57,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.target.rc \
     init.recovery.qcom.rc
-
-# Device Features
-PRODUCT_PACKAGES += \
-    DeviceFeatures
 
 # Fingerprint
 PRODUCT_PACKAGES += \
