@@ -20,7 +20,8 @@ $(call inherit-product, vendor/xiaomi/gemini/gemini-vendor.mk)
 
 # Local overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-qassa
 
 # Inherit from msm8996-common
 $(call inherit-product, device/xiaomi/msm8996-common/msm8996.mk)
@@ -37,24 +38,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/mixer_paths_tasha.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha.xml
 
-# Barokah Project
-PRODUCT_PACKAGES += \
-    barokah
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/com.barokah.kernel.unkl.xml:system/etc/permissions/com.barokah.kernel.unkl.xml
-
 # Camera
 PRODUCT_PACKAGES += \
-    GCam
-    #Snap
-    
+    #GCam \
+    Snap
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.google.android.GoogleCamera.xml:system/etc/permissions/com.google.android.GoogleCamera.xml
 
-# ConfigPanel
+# Device Features
 PRODUCT_PACKAGES += \
-    ConfigPanel
+    DeviceFeatures
 
 # Consumer IR
 PRODUCT_PACKAGES += \
