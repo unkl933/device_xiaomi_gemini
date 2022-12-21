@@ -133,6 +133,21 @@ etc/camera/msm8996_camera.xml
 etc/camera/ov4688_chromatix.xml
 etc/camera/ov4688_primax_chromatix.xml
 
+# MIUI Camera configs
+etc/default-permissions/miuicamera-permissions.xml
+etc/device_features/gemini.xml
+etc/permissions/miuicamera-privapp-permissions.xml
+
+# MIUI Camera libs
+lib/libCameraEffectJNI.so:system/lib/libCameraEffectJNI.so
+lib/libmorpho_memory_allocator.so:system/lib/libmorpho_memory_allocator.so
+lib/libmorpho_panorama.so:system/lib/libmorpho_panorama.so
+lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so
+lib64/libCameraEffectJNI.so:system/lib64/libCameraEffectJNI.so
+lib64/libmorpho_memory_allocator.so:system/lib64/libmorpho_memory_allocator.so
+lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so
+lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so
+    
 # Camera eeproms
 vendor/lib/libmmcamera_ov4688_eeprom.so
 vendor/lib/libmmcamera_sony_imx298_eeprom.so
