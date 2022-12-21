@@ -40,10 +40,11 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    #GCam \
-    Snap
+    MiuiCam
+    
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/com.google.android.GoogleCamera.xml:system/etc/permissions/com.google.android.GoogleCamera.xml
+    $(LOCAL_PATH)/configs/com.google.android.GoogleCamera.xml:system/etc/permissions/com.google.android.GoogleCamera.xml \
+    $(LOCAL_PATH)/configs/com.android.camera.xml:system/etc/permissions/com.android.camera.xml
 
 # Device Features
 PRODUCT_PACKAGES += \
