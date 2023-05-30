@@ -67,5 +67,9 @@
 
     <!-- Whether to use old mobile type icons as default -->
     <bool name="config_useOldMobileIcons">true</bool>
+    
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">90.0px</dimen>
+    <dimen name="status_bar_height_landscape">86.0px</dimen>
 
 </resources>
